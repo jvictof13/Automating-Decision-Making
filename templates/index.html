@@ -48,7 +48,10 @@
         <p class="neon">País: {{ anime['pais'] }}</p>
         <p class="neon">Episódios: {{ anime['episodios'] }}</p>
     </div>
-    <button onclick="escolherAnime()" class="neon">Escolher</button>
+    <form action="/escolher_anime" method="post">
+        <button type="submit" class="neon">Escolher</button>
+    </form>
+    
 
     
 </body>

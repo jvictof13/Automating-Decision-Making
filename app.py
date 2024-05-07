@@ -8,7 +8,10 @@ def index():
     print(escolher_anime())
     return render_template('index.html',anime=escolher_anime())
 
-#@app.route('/escolher_anime')
+@app.route('/escolher_anime',methods=['POST'])
+def anime():
+    return render_template('index.html',anime=escolher_anime())
+
 def escolher_anime():
     animes = [
     {
